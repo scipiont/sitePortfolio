@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <title>Портфолио</title>
 </head>
-<body>
+<body class="no-scroll">
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -29,7 +29,7 @@
                     <a class = "nav__link" href="#">Работа</a>
                     <a class = "nav__link" href="#">Обо мне</a>
                     <a class = "nav__link" href="#">Блог</a>
-                    <a class = "nav__link" href="#">Мои контакты</a>
+                    <a class = "nav__link" href="#">Контакты</a>
                     <!-- <a class = "nav__link nav-nav__link_border" href="#">Найми меня</a> -->
                     <a class = "nav__link nav__link--btn" href="#">Найми меня</a>
                 </nav> 
@@ -66,7 +66,7 @@
                         </a>
                     </div>
                     <a class = "btn" href="#">Найми меня</a>
-                    <button class = "btn" type="button">Посмотри моё резюме</button>
+                    <button class = "btn" type="button">Резюме</button>
 
                     
                 </div>
@@ -87,24 +87,319 @@
             </div><!--./work__nav-->
             <div class="portfolio">
                 <div class="portfolio__col">
-                    <div class="work__item">
+                    <div class="work">
                         <img class = "work__image" src="/images/project/1.jpg" alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория</div>
                             <div class="work__title">
                                 Проект
-                                <div class="work__date"></div>
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">2</div>
-                <div class="portfolio__col">3</div>
-                <div class="portfolio__col">4</div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img class = "work__image" src="/images/project/2.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Категория</div>
+                            <div class="work__title">
+                                Проект
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img class="work__image" src="/images/project/3.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Категория</div>
+                            <div class="work__title">
+                                Проект
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img class = "work__image" src="/images/project/4.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Категория</div>
+                            <div class="work__title">
+                                Проект
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img class = "work__image" src="/images/project/5.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Категория</div>
+                            <div class="work__title">
+                                Проект
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__col">
+                    <div class="work">
+                        <img class = "work__image" src="/images/project/6.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__cat">Категория</div>
+                            <div class="work__title">
+                                Проект
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!--./portfolio-->
+            <div class="text-center">
+                <a class = "btn btn--sm" href="#">Загрузить больше работ</a>
             </div>
         </div><!--./container-->
     </div><!--./works-->
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img class = "img" src="images/designer_photo2.png" alt="">
+                </div>
+                <div class="about__content">
+                    <h3 class="about__title">Обо мне</h3>
+                    <h2 class="about__bigtitle">Кто я</h2>
+                    <div class="about__text">
+                       <p> Здравствуйте, меня зовут Николай и я профессиональный UI/UX веб-дизайнер. Я предлагаю услуги по разработке и дизайну веб-сайтов, а также по разработке интерфейсов и интерактивных приложений. Я использую различные инструменты, такие как Photoshop, Figma, Sketch и InVision, чтобы создавать эффективные и привлекательные дизайны.  </p>
+                       <p>Я постоянно стремлюсь к улучшению и использую последние достижения и технологии для того, чтобы создавать интерфейсы, которые пользователи могут легко использовать и понимать. Я активно работаю с клиентами, чтобы понять их потребности и помочь им достичь их целей. </p>
+                       <!-- <p>На этом сайте вы можете просмотреть мое портфолио и посмотреть мои последние работы. Я уверен, что мои услуги помогут вам развить ваш бизнес и достичь успеха. Если у вас есть какие-либо вопросы, пожалуйста, не стесняйтесь обращаться ко мне. И буду рад помочь вам!</p> -->
+                    </div>
+                    <a class = "btn" href="#">Найми меня</a>
+                    <button class = "btn" type="button">Резюме</button>
+                </div> <!-- /.about__content-->
+            </div><!-- /.about__inner-->
+        </div><!-- /.container-->
+    </section>
+    <!--Reviews-->
+    <div class="reviews">
+        <div class="container">
+            <div class="reviews__item">
+                <div class="reviews__text">
+                    <p>Я работал с Николаем Мукониным над созданием сайта для моей компании "ЮРР". Он был очень профессионален и предоставил все услуги, которые мне были необходимы. Он был очень любезен и помог мне понять все процессы дизайна и внедрения. </p>
+                    <p>Николай очень профессиональный специалист и предоставил нам прекрасный результат проекта. Я бы очень рекомендовал его услуги другим компаниям. Он действительно понимает веб-дизайн и знает как создать профессиональный сайт. Спасибо Николай!</p>
+                </div>
+                <div class="reviews__author">
+                    <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
+                    <div class="reviews__name">Алексей Петров</div>
+                    <div class="reviews__company">ЮРР</div>
+                    <div class="reviews__rating">
+                        <img class="reviews__star" src="/images/icons/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="/images/icons/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="/images/icons/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star" src="/images/icons/star.svg" width="13" height="13" alt="">
+                        <img class="reviews__star reviews__star--unactive" src="/images/icons/starhalf.svg" width="13" height="13" alt="">
+                    </div>
+
+                </div>
+
+            </div> <!--reviews__item-->
+        </div><!--/.container-->
+    </div><!--/.reviews-->
+    <!--news-->
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="news__title">Прочитай</h3>
+                <div class="news__text">Статьи о UI/UX дизайне</div>
+            </div>
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">
+                                10<br>декабря
+                            </time>
+                            <a href="https://blog.google/products/google-play/google-plays-best-apps-and-games-of-2022/" target="_blank">
+                                <img class="articles__photo" src="images/news/1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                               <a href="https://blog.google/products/google-play/google-plays-best-apps-and-games-of-2022/" target="_blank"> 10 лучших приложений в 2022 году </a>
+                            </h4>
+                            <div class="articles__cat">Категория</div>
+                            <div class="articles__text">
+                                <p>The winners are in for Google Play’s Best of 2022 awards.
+                                Every year we recognize the best apps and games on Google Play and the developers who bring them to life. Their bold ideas and creativity help us reach people across all kinds of devices — from phones and watches to Chromebooks and tablets.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn--sm" href="https://blog.google/products/google-play/google-plays-best-apps-and-games-of-2022/" target="_blank">Узнать больше</a>
+                    </div>
+                    
+                </div>      
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">
+                                25<br>декабря
+                            </time>
+                            <a href="https://dribbble.com/tags/2022_website_designs" target="_blank">
+                                <img class="articles__photo" src="images/news/2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                               <a href="https://dribbble.com/tags/2022_website_designs" target="_blank">Лучшие вдохновляющие веб-дизайны в 2022 году</a>
+                            </h4>
+                            <div class="articles__cat">Категория</div>
+                            <div class="articles__text">
+                                <p>2022 Website Designs
+                                    Inspirational designs, illustrations, and graphic elements from the world’s best designers.
+                                    Want more inspiration? . Best websites for designers in 2022. Dribbble is the world’s leading community for creatives to share, grow, and get hired.</p>
+                            </div>
+                        </div>
+                        <a class="btn btn--sm" href="https://dribbble.com/tags/2022_website_designs" target="_blank">Узнать больше</a>
+                    </div>
+                </div>
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date">
+                                30<br>декабря
+                            </time>
+                            <a href="https://vc.ru/marketing/420511-15-trendov-socmedia-kotorye-povliyayut-na-marketing-v-2022" target="_blank">
+                                <img class="articles__photo" src="images/news/3.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                               <a href="https://vc.ru/marketing/420511-15-trendov-socmedia-kotorye-povliyayut-na-marketing-v-2022" target="_blank"> 10 лучших приложений в 2022 году </a>
+                            </h4>
+                            <div class="articles__cat">Категория</div>
+                            <div class="articles__text">
+                                <p>15 трендов соцмедиа, которые повлияют на маркетинг в 2022.
+                                    Социальные медиа — это неотъемлемая часть продвижения. И безусловно, что тенденции в социальных сетях определяют подход к принятию решений в бизнесе. Актуальные данными и технологиями</p>
+                            </div>
+                        </div>
+                        <a class="btn btn--sm" href="https://vc.ru/marketing/420511-15-trendov-socmedia-kotorye-povliyayut-na-marketing-v-2022" target="_blank">Узнать больше</a>
+                    </div>
+                </div> <!--articles__col-->
+            </div> <!--articles-->
+            <div class="news__footer">
+                <a class="news__link" href="">Посмотреть больше постов</a>
+            </div>
+        </div><!--/.container-->
+    </section><!--/.news-->
+
+    <!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__credits">
+                <div class="footer__copyright">
+                   &copy; 2023 Nikolay Mukonin
+                </div>
+                <div class="footer__social">
+                    <a href="#" target="_blank">
+                        <img src="/images/social/behance.svg" width="24" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                           <img src="/images/social/dribble.svg" width="22" alt="">
+                    </a> 
+                    <a href="#" target="_blank">
+                        <img src="/images/social/linkedin.svg" height="20" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="/images/social/facebook.svg" width="20" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="/images/social/instagram.svg" width="28" alt="">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="/images/social/twitter.svg" width="24" alt="">
+                    </a>
+                </div>
+            </div> <!--footer__credits-->
+            <div class="footer__nav">
+                <a class="footer__nav-link" href="#">Работа</a>
+                <a class="footer__nav-link" href="#">Обо мне</a>
+                <a class="footer__nav-link" href="#">Блог</a>
+                <a class="footer__nav-link" href="#">Контакты</a>
+                <a class="footer__nav-link footer__nav-link--btn" href="#">Найми меня</a>
+            </div>
+        </div> <!--footer__inner-->
+    </div> <!--container-->
+</footer>
+
+<!--Modals-->
+<div class="modal" style="display: none;">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button">
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <img class="modal__work-photo" src="https://placehold.it/790x780" alt="">
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Названиие проекта</h3>
+                    <div class="modal__work-info">
+                        Категория <span class="modal__work-info-divider">|</span> 2019
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">ЮРР</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button">
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+
+
+        
+
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
 
 
 
