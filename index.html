@@ -8,9 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>Портфолио</title>
 </head>
-<body class="no-scroll">
+<body>
+    <!-- <body class="no-scroll"> -->
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -31,7 +33,7 @@
                     <a class = "nav__link" href="#">Блог</a>
                     <a class = "nav__link" href="#">Контакты</a>
                     <!-- <a class = "nav__link nav-nav__link_border" href="#">Найми меня</a> -->
-                    <a class = "nav__link nav__link--btn" href="#">Найми меня</a>
+                    <a class = "nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
                 </nav> 
            </div>
         </div>
@@ -65,8 +67,8 @@
                             <img src="/images/social/6.png" alt="">
                         </a>
                     </div>
-                    <a class = "btn" href="#">Найми меня</a>
-                    <button class = "btn" type="button">Резюме</button>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">Резюме</button>
 
                     
                 </div>
@@ -80,85 +82,87 @@
     <div class="works">
         <div class="container">
             <div class="works__nav">
-                <a href="" class="works__nav-link">Все</a>
-                <a href="" class="works__nav-link">Приложения</a>
-                <a href="" class="works__nav-link">Вебсайты</a>
-                <a href="" class="works__nav-link">Дизайн</a>
+                <a href="" class="works__nav-link" data-filter="all">Все</a>
+                <a href="" class="works__nav-link" data-filter="app">Приложения</a>
+                <a href="" class="works__nav-link" data-filter="website">Вебсайты</a>
+                <a href="" class="works__nav-link" data-filter="design">Дизайн</a>
             </div><!--./work__nav-->
-            <div class="portfolio">
-                <div class="portfolio__col">
-                    <div class="work">
-                        <img class = "work__image" src="/images/project/1.jpg" alt="">
+            <!-- id="go_to_mnogomeda" -->
+            <div class="portfolio" id="portfolio">
+                <div class="portfolio__col" data-cat="website" >
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="/images/project/1.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория</div>
+                            <div class="work__cat">Категория: Вебсайт</div>
                             <div class="work__title">
-                                Проект
-                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                Горный мёд
+                                <time class="work__date" datetime="2019-11-22 19:00">2022</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
-                    <div class="work">
-                        <img class = "work__image" src="/images/project/2.jpg" alt="">
+                <!-- id="go_to_gilev" -->
+                <div class="portfolio__col" data-cat="website">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work__image" src="/images/project/2.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория</div>
+                            <div class="work__cat">Категория: Вебсайт</div>
                             <div class="work__title">
-                                Проект
-                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                MG Webmasters
+                                <time class="work__date" datetime="2019-11-22 19:00">2023</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="design">
                     <div class="work">
-                        <img class="work__image" src="/images/project/3.jpg" alt="">
+                        <img class="work__image" src="/images/project/3.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория</div>
+                            <div class="work__cat">Категория: Дизайн</div>
                             <div class="work__title">
-                                Проект
-                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                Стоматология
+                                <time class="work__date" datetime="2019-11-22 19:00">2023</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="website">
                     <div class="work">
-                        <img class = "work__image" src="/images/project/4.jpg" alt="">
+                        <img class = "work__image" src="/images/project/4.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория</div>
+                            <div class="work__cat">Категория: Вебсайт</div>
                             <div class="work__title">
-                                Проект
-                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                Южно-региональный регистратор
+                                <time class="work__date" datetime="2019-11-22 19:00">2016</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work">
-                        <img class = "work__image" src="/images/project/5.jpg" alt="">
+                        <img class = "work__image" src="/images/project/5.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория</div>
+                            <div class="work__cat">Категория: Приложение</div>
                             <div class="work__title">
-                                Проект
-                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                Игра: Тренировка памяти
+                                <time class="work__date" datetime="2019-11-22 19:00">2021</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col">
+                <div class="portfolio__col" data-cat="app">
                     <div class="work">
-                        <img class = "work__image" src="/images/project/6.jpg" alt="">
+                        <img class="work__image" src="/images/project/6.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория</div>
+                            <div class="work__cat">Категория: Приложение</div>
                             <div class="work__title">
-                                Проект
-                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                                Мультиконвертер изображений
+                                <time class="work__date" datetime="2019-11-22 19:00">2022</time>
 
                             </div>
                         </div>
@@ -185,8 +189,8 @@
                        <p>Я постоянно стремлюсь к улучшению и использую последние достижения и технологии для того, чтобы создавать интерфейсы, которые пользователи могут легко использовать и понимать. Я активно работаю с клиентами, чтобы понять их потребности и помочь им достичь их целей. </p>
                        <!-- <p>На этом сайте вы можете просмотреть мое портфолио и посмотреть мои последние работы. Я уверен, что мои услуги помогут вам развить ваш бизнес и достичь успеха. Если у вас есть какие-либо вопросы, пожалуйста, не стесняйтесь обращаться ко мне. И буду рад помочь вам!</p> -->
                     </div>
-                    <a class = "btn" href="#">Найми меня</a>
-                    <button class = "btn" type="button">Резюме</button>
+                    <a class = "btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
+                    <button class = "btn" type="button" data-modal="#modal_resume">Резюме</button>
                 </div> <!-- /.about__content-->
             </div><!-- /.about__inner-->
         </div><!-- /.container-->
@@ -336,27 +340,34 @@
                 <a class="footer__nav-link" href="#">Обо мне</a>
                 <a class="footer__nav-link" href="#">Блог</a>
                 <a class="footer__nav-link" href="#">Контакты</a>
-                <a class="footer__nav-link footer__nav-link--btn" href="#">Найми меня</a>
+                <a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
             </div>
         </div> <!--footer__inner-->
     </div> <!--container-->
 </footer>
 
 <!--Modals-->
-<div class="modal" style="display: none;">
+<div class="modal" id="modal_project_1">
     <div class="modal__dialog">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
             <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
         </button>
         <div class="modal__work">
             <div class="modal__work-preview">
-                <img class="modal__work-photo" src="https://placehold.it/790x780" alt="">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="https://placehold.it/790x780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__work-photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
             </div>
             <div class="modal__work-content">
 
 
                 <div class="modal__work-header">
-                    <h3 class="modal__work-title">Названиие проекта</h3>
+                    <h3 class="modal__work-title">Название проекта</h3>
                     <div class="modal__work-info">
                         Категория <span class="modal__work-info-divider">|</span> 2019
                     </div>
@@ -364,7 +375,7 @@
 
                 <div class="modal__work-client">
                     <div class="modal__work-client-title">Клиент:</div>
-                    <div class="modal__work-client-company">ЮРР</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
                 </div>
 
                 <div class="modal__work-text">
@@ -373,12 +384,12 @@
                 </div>
 
                 <div class="modal__work-footer">
-                    <button class="modal__work-btn" type="button">
+                    <button class="modal__work-btn slickPrev" type="button">
                         
                         <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
                         Предыдущий
                     </button>
-                    <button class="modal__work-btn" type="button">
+                    <button class="modal__work-btn slickNext" type="button">
                         Следующий
                         <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
                     </button>
@@ -388,17 +399,71 @@
     </div> <!--/.modal__dialog-->
 </div> <!--/.modal-->
 
-<div class="modal">
+<div class="modal" id="modal_project_2">
     <div class="modal__dialog">
-        <button class="modal__close" type="button">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div>
+                        <img class="modal__work-photo" src="https://placehold.it/790x780" alt="">
+                    </div>
+                    <div>
+                        <img class="modal__work-photo" src="https://placehold.it/790x780/333" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">MG Webmasters</h3>
+                    <div class="modal__work-info">
+                        Категория <span class="modal__work-info-divider">|</span> 2019
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">MG Webmasters</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+
+
+<div class="modal" id="modal_resume">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
             <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
         </button>
         <div class="modal__content">
-            <h3 class="modal__title">Резюме</h3>
+            <h3 class="modal__title text-center">Резюме</h3>
         
             <div class="text-center">
-                <a class="btn btn--thin" href="#">Скачать PDF</a>
-                <a class="btn btn--thin" href="#">Распечатать</a>
+                <a class="btn btn--thin" href="/images/mukonin.pdf">Скачать PDF</a>
+                <a class="btn btn--thin" href="#" onclick="window.open('/images/mukonin.pdf', '_blank', 'fullscreen=yes'); return false;">Распечатать</a>
             </div>
             <div class="timeline">
                 <div class="timeline__col timeline__col--left">
@@ -410,7 +475,7 @@
                         <div class="timeline__text">
                             <p>Создание сайтов с нуля по продаже мёда(сайт-реклама), интернет-магазин по продаже мёда и 
                                 пчелопродуктов на Angular с помощью TypeScript, Node.js. Создание дизайн-концептов для школы Английского языка,
-                                стоматологической клиники и многое другое.
+                                стоматологической клиники и многое другое. Верстка сайтов на Tilda с анимацией.
                             </p>
                         </div>
                     </div>
@@ -457,22 +522,254 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> <!--/.timeline__col timeline__col--left-->
                 <div class="timeline__col timeline__col--right">
                     <h4 class="timeline__title">Образование</h4>
-                </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="08-15-2022">2022 - 2023</b></time>
+                        <h5 class="timeline__subtitle">Курс Веб-дизайн UX/UI</h5>
+                        <div class="timeline__position">Поток</div>
+                        <div class="timeline__text">
+                            <p>Прохожу курс у Данила Фимушкина по UX/UI дизайну в веб-индустрии.
+                                Создание сайтов на Tilda, создание концептов в Figma.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="08-15-2022">2013</b></time>
+                        <h5 class="timeline__subtitle">Полный курс по администрированию Oracle 11G</h5>
+                        <div class="timeline__position">Специалист при МГТУ им.Баумана</div>
+                        <div class="timeline__text">
+                            <p>Курс по Oracle и PL/SQL
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="08-15-2022">2011</b></time>
+                        <h5 class="timeline__subtitle">Администрирование Linux систем. 1 и 2 уровень</h5>
+                        <div class="timeline__position">Специалист при МГТУ им.Баумана</div>
+                        <div class="timeline__text">
+                            <p>Администрирование Linux(unix-систем) и FreeBSD.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="08-15-2022">2003-2005</b></time>
+                        <h5 class="timeline__subtitle">Специалист по программному обеспечению</h5>
+                        <div class="timeline__position">Учебный центр Роскомстата России при РИНХ</div>
+                        <div class="timeline__text">
+                            <p>Обучение СУБД Visual FoxPro и Visual Basic
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="08-15-2022">1998-2003</b></time>
+                        <h5 class="timeline__subtitle">Преподаватель</h5>
+                        <div class="timeline__position">Ростовский госдурственный универститет(ЮФУ)</div>
+                        <div class="timeline__text">
+                            <p>
+                            </p>
+                        </div>
+                    </div>
+                    <h4 class="timeline__title">Умения (скиллы)</h4>
+                    <div class="progress__bar">
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">UI/UX Design</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">Frontend dev</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">Backend dev</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">Fullstack dev</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">Figma</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">Photoshop</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">Corel Draw</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">SQL</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">VBA</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">VS FoxPro</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">MS Access</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 94%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress__bar-item">
+                            <div class="progress__bar-left">
+                                <div class="progress__bar-title">MS Excel</div>
+                            </div>
+                            <div class="progress__bar-right">
+                                <div class="progress__bar-bar">
+                                    <div class="progress__bar-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--/.progress__bar-->
+                    <h4 class="timeline__title">Сертификаты</h4>
+                    <div class="timeline__item">
+                        <time class="timeline__date" datetime="08-15-2022">2020</b></time>
+                        <h5 class="timeline__subtitle">Lunix средний уровень</h5>
+                        <div class="timeline__position">GeekBrains</div>
+                        <div class="timeline__text">
+                            <p>Сертификат от GeekBrains
+                            </p>
+                        </div>
+                    </div>
+                </div> <!--/.timeline__col timeline__col--right-->
 
 
 
 
 
             </div> <!--/.timeline-->
+
+            <div class="text-center">
+                <a class="btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
+            </div>
         </div> <!--/.modal__content-->
     </div> <!--/.modal__dialog-->
 </div> <!--/.modal-->
 
+<div class="modal" id="modal_hire_me">
+    <div class="modal__dialog modal__dialog--sm">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        
+            
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title modal__title--mbo">Как со мной связаться?</h3>
+                    <h4 class="modal__subtitle">Позвоните мне или напишите запрос</h4>
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="/images/modal/phone.svg" width="25" alt="">
+                            +7 928 179-69-29
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="/images/modal/mail.svg" width="25" alt="">
+                            mukonin@mail.com
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="/images/modal/mail.svg" width="25" alt="">
+                            webmaster@mukonin.ru
+                        </li>
+                    </ul>
+
+                    <form class="form" action="/" method="POST">
+                        <div class="form__group">
+                            <label for="input-email" class="label">Адрес e-mail</label>
+                            <input class="input" name="input-email" type="text" id="input-email" placeholder="Адрес e-mail">
+                        </div>
+                        <div class="form__group">
+                            <label for="input-email" class="label">Сообщение</label>
+                            <textarea class="textarea" name="input-text" id="input-text" placeholder="Ваше сообщение..."></textarea>
+                        </div>
+                        <div class="text-right">
+                            <button class="btn" type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div> <!--/.contact__left-->
+                <!-- <div class="contact__right">
+
+                </div> -->
+            </div> <!--/.contact-->
+        
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
 
 
-
+<!--JS-->
+<script src="js/slick.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

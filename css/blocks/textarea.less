@@ -1,0 +1,44 @@
+// main: ../style.less
+.textarea {
+    height: 150px;
+    display: block;
+    /*Нужно прописать потому что даже блочный инпут не будет на сто процентов без указания ширины сто прцентов*/
+    width: 100%;
+    padding: 1.3rem 1.8rem;
+    font-family: inherit;
+    font-size:  0.8rem;
+    font-weight: 300;
+    line-height: 1.2;
+    border: 1px solid fade(#707070, 30%);
+    border-radius: 1.8rem;
+    transition: border-color .2s linear;
+    color: #2B2A2C;
+    &:focus {
+        outline: none;
+        border-color: #36abc7;
+      
+    }
+    &:focus::-webkit-input-placeholder {
+        color: transparent
+      }
+      
+    &:focus::-moz-placeholder {
+        color: transparent
+      }
+      
+    &:focus:-moz-placeholder {
+        color: transparent
+      }
+      
+    &:focus:-ms-input-placeholder {
+        color: transparent
+      }
+
+
+
+    &::placeholder {
+        color: #2B2A2C;
+    }
+    
+    resize: none;
+}
