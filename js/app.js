@@ -100,6 +100,49 @@ $(function(){
         let currentSlider = $(this).parents(".modal").find('[data-slider="slick"]');
         currentSlider.slick('slickNext');
     });
+
+
+
+
+     /* Smooth Scroll */
+     $("[data-scroll]").on("click",function(event){
+        event.preventDefault();
+        var $this = $(this),
+            blockId = $(this).data('scroll'),
+            blockOffset = $(blockId).offset().top;
+        $("#nav a").removeClass("active");
+       $this.addClass("active")     
+          //  console.log(blockOffset);
+       $("html, body").animate({
+            scrollTop: blockOffset
+       }, 500);
+     });
+
+
+ /*Load More Works*/
+
+
+    //  $("#btnsm").on("click", function(event){
+    //  event.preventDefault();
+  
+    //  let cct = $(this).data(".portfolio__col--onload");
+    //  cct.addClass('active');
+    //  });
+    $("#btnsm").on("click", function(event) {
+        event.preventDefault();
+        $('#b1').css('display' , 'block');
+        $('#b2').css('display' , 'block');
+        $('#b3').css('display' , 'block');
+        $('#b4').css('display' , 'block');
+        $('#b5').css('display' , 'block');
+        $('#b6').css('display' , 'block');
+    });
+    // $('#bazkom').addClass('portfolio__col--onload');
+
+
+
+
+
 });
 
 
