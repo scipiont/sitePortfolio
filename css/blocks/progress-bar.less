@@ -5,8 +5,10 @@
 
 .progress__bar-item {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 0.5rem;
+    
 }
 .progress__bar-title {
 
@@ -22,6 +24,9 @@
     width: 139px;
     height: 6px;
     background-color: #EFEFEF;
+    @media @mobile {
+        margin-top: 1rem;
+    }
 }
 .progress__bar-progress {
     height: 100%;

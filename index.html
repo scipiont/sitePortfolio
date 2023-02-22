@@ -27,7 +27,7 @@
                     </div>
               
                 </div>
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a class = "nav__link" href="#" data-scroll="#works">Работа</a>
                     <a class = "nav__link" href="#" data-scroll="#about">Обо мне</a>
                     <a class = "nav__link" href="#" data-scroll="#blog">Блог</a>
@@ -35,6 +35,9 @@
                     <!-- <a class = "nav__link nav-nav__link_border" href="#">Найми меня</a> -->
                     <a class = "nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
                 </nav> 
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="/images/nav/menu.svg" alt="">
+                </button>
            </div>
         </div>
     </header>
@@ -65,6 +68,9 @@
                         </a>
                         <a class = "social__link" href="#" target="_blank">
                             <img src="/images/social/6.png" alt="">
+                        </a>
+                        <a class = "social__link" href="https://vk.com/nikolaymm" target="_blank">
+                            <img src="/images/social/vkontakte.svg" alt="" width="41">
                         </a>
                     </div>
                     <a class="btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
@@ -117,7 +123,7 @@
                     </div>
                 </div>
                 <div class="portfolio__col" data-cat="design">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_3">
                         <img class="work__image" src="/images/project/3.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Дизайн</div>
@@ -130,7 +136,7 @@
                     </div>
                 </div>
                 <div class="portfolio__col" data-cat="website">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_4">
                         <img class = "work__image" src="/images/project/4.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Вебсайт</div>
@@ -143,7 +149,7 @@
                     </div>
                 </div>
                 <div class="portfolio__col" data-cat="app">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_5">
                         <img class = "work__image" src="/images/project/5.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Приложение</div>
@@ -156,7 +162,7 @@
                     </div>
                 </div>
                 <div class="portfolio__col" data-cat="app">
-                    <div class="work">
+                    <div class="work" data-modal="#modal_project_6">
                         <img class="work__image" src="/images/project/6.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Приложение</div>
@@ -170,38 +176,38 @@
                 </div>
 
                 <div class="portfolio__col portfolio__col--onload" id="b1" data-cat="website">
-                    <div class="work">
-                        <img class = "work__image" src="/images/project/4.jpg"  alt="">
+                    <div class="work" data-modal="#modal_project_7">
+                        <img class = "work__image" src="/images/project/7.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Вебсайт</div>
                             <div class="work__title">
-                                Южно-региональный регистратор
-                                <time class="work__date" datetime="2019-11-22 19:00">2016</time>
+                                Интернет-магазин: Paseka.shop
+                                <time class="work__date" datetime="2019-11-22 19:00">2022</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__col portfolio__col--onload" id="b2" data-cat="app">
-                    <div class="work">
-                        <img class = "work__image" src="/images/project/5.jpg"  alt="">
+                    <div class="work" data-modal="#modal_project_8">
+                        <img class = "work__image" src="/images/project/8.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Приложение</div>
                             <div class="work__title">
-                                Игра: Тренировка памяти
+                                Аналоговые часы
                                 <time class="work__date" datetime="2019-11-22 19:00">2021</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col portfolio__col--onload" id="b3" data-cat="app">
-                    <div class="work">
-                        <img class="work__image" src="/images/project/6.jpg"  alt="">
+                <div class="portfolio__col portfolio__col--onload" id="b3" data-cat="website">
+                    <div class="work" data-modal="#modal_project_9">
+                        <img class="work__image" src="/images/project/9.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория: Приложение</div>
+                            <div class="work__cat">Категория: Вебсайт</div>
                             <div class="work__title">
-                                Мультиконвертер изображений
+                                Сайт "Наука сна"
                                 <time class="work__date" datetime="2019-11-22 19:00">2022</time>
 
                             </div>
@@ -209,39 +215,39 @@
                     </div>
                 </div>
 
-                <div class="portfolio__col portfolio__col--onload" id="b4" data-cat="website">
-                    <div class="work">
-                        <img class = "work__image" src="/images/project/4.jpg"  alt="">
+                <div class="portfolio__col portfolio__col--onload" id="b4" data-cat="design">
+                    <div class="work" data-modal="#modal_project_10">
+                        <img class = "work__image" src="/images/project/10.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория: Вебсайт</div>
+                            <div class="work__cat">Категория: Дизайн</div>
                             <div class="work__title">
-                                Южно-региональный регистратор
-                                <time class="work__date" datetime="2019-11-22 19:00">2016</time>
+                                Интернет-магазин по продаже бытовой техники
+                                <time class="work__date" datetime="2019-11-22 19:00">2023</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__col portfolio__col--onload" id="b5" data-cat="app">
-                    <div class="work">
-                        <img class = "work__image" src="/images/project/5.jpg"  alt="">
+                <div class="portfolio__col portfolio__col--onload" id="b5" data-cat="website">
+                    <div class="work" data-modal="#modal_project_11">
+                        <img class = "work__image" src="/images/project/11.jpg"  alt="">
                         <div class="work__content">
-                            <div class="work__cat">Категория: Приложение</div>
+                            <div class="work__cat">Категория: Вебсайт</div>
                             <div class="work__title">
-                                Игра: Тренировка памяти
-                                <time class="work__date" datetime="2019-11-22 19:00">2021</time>
+                                Сайт: школа Английского языка
+                                <time class="work__date" datetime="2019-11-22 19:00">2023</time>
 
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__col portfolio__col--onload" id="b6" data-cat="app">
-                    <div class="work">
-                        <img class="work__image" src="/images/project/6.jpg"  alt="">
+                    <div class="work" data-modal="#modal_project_12">
+                        <img class="work__image" src="/images/project/12.jpg"  alt="">
                         <div class="work__content">
                             <div class="work__cat">Категория: Приложение</div>
                             <div class="work__title">
-                                Мультиконвертер изображений
+                                Игра: Найди потерянное число
                                 <time class="work__date" datetime="2019-11-22 19:00">2022</time>
 
                             </div>
@@ -286,7 +292,7 @@
                     <p>Николай очень профессиональный специалист и предоставил нам прекрасный результат проекта. Я бы очень рекомендовал его услуги другим компаниям. Он действительно понимает веб-дизайн и знает как создать профессиональный сайт. Спасибо Николай!</p>
                 </div>
                 <div class="reviews__author">
-                    <img class="reviews__photo" src="https://placehold.it/103/333" alt="">
+                    <img class="reviews__photo" src="/images/person.jpg" alt="">
                     <div class="reviews__name">Алексей Петров</div>
                     <div class="reviews__company">ЮРР</div>
                     <div class="reviews__rating">
@@ -383,7 +389,7 @@
                 </div> <!--articles__col-->
             </div> <!--articles-->
             <div class="news__footer">
-                <a class="news__link" href="">Посмотреть больше постов</a>
+                <a class="news__link" href="http://blog.mukonin.ru" target="_blank">Посмотреть больше постов</a>
             </div>
         </div><!--/.container-->
     </section><!--/.news-->
@@ -412,8 +418,11 @@
                     <a href="#" target="_blank">
                         <img src="/images/social/instagram.svg" width="28" alt="">
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://vk.com/nikolaymm" target="_blank">
                         <img src="/images/social/twitter.svg" width="24" alt="">
+                    </a>
+                    <a href="https://vk.com/nikolaymm" target="_blank">
+                        <img src="/images/social/vk.svg" width="24" alt="">
                     </a>
                 </div>
             </div> <!--footer__credits-->
@@ -437,11 +446,11 @@
         <div class="modal__work">
             <div class="modal__work-preview">
                 <div data-slider="slick">
-                    <div>
-                        <img class="modal__work-photo" src="https://placehold.it/790x780" alt="">
+                    <div id="go_to_mnogomeda">
+                        <img class="modal__work-photo" src="/images/project/med1.jpg" alt="">
                     </div>
-                    <div>
-                        <img class="modal__work-photo" src="https://placehold.it/790x780/333" alt="">
+                    <div id="go_to_mnogomeda1">
+                        <img class="modal__work-photo" src="/images/project/med3.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -449,9 +458,9 @@
 
 
                 <div class="modal__work-header">
-                    <h3 class="modal__work-title">Название проекта</h3>
+                    <h3 class="modal__work-title">Горный мёд</h3>
                     <div class="modal__work-info">
-                        Категория <span class="modal__work-info-divider">|</span> 2019
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2022
                     </div>
                 </div>
 
@@ -461,8 +470,8 @@
                 </div>
 
                 <div class="modal__work-text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
+                    <p>Создан сайт по продаже пчелопродуктов из Солонешенского района Алтайского края.</p>
+                    <p>Проект создан как двустраничный лендинг, с отправкой формы заявки. Применен современный стиль и дизайн.</p>
                 </div>
 
                 <div class="modal__work-footer">
@@ -489,11 +498,11 @@
         <div class="modal__work">
             <div class="modal__work-preview">
                 <div data-slider="slick">
-                    <div>
-                        <img class="modal__work-photo" src="https://placehold.it/790x780" alt="">
+                    <div id="go_to_gilev">
+                        <img class="modal__work-photo" src="/images/project/mg1.jpg" alt="">
                     </div>
-                    <div>
-                        <img class="modal__work-photo" src="https://placehold.it/790x780/333" alt="">
+                    <div id="go_to_gilev1">
+                        <img class="modal__work-photo" src="/images/project/mg2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -503,7 +512,7 @@
                 <div class="modal__work-header">
                     <h3 class="modal__work-title">MG Webmasters</h3>
                     <div class="modal__work-info">
-                        Категория <span class="modal__work-info-divider">|</span> 2019
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2023
                     </div>
                 </div>
 
@@ -513,8 +522,8 @@
                 </div>
 
                 <div class="modal__work-text">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique nesciunt enim consectetur ea delectus, sunt asperiores ipsa dolorem natus consequatur facere rem molestiae eius provident voluptatem reprehenderit quam, perferendis eveniet?</p>
+                    <p>Вебсайт компании MG Webmasters, сайт - реклама вебмастеров, занимающихся разработкой дизайнов и fullstack девелопингом.</p>
+                    <p>Сайт одностраничный лендинг с отзывами, минималистичным дизайном в современном стиле.</p>
                 </div>
 
                 <div class="modal__work-footer">
@@ -533,7 +542,525 @@
     </div> <!--/.modal__dialog-->
 </div> <!--/.modal-->
 
+<div class="modal" id="modal_project_3">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="figma1">
+                        <img class="modal__work-photo" src="/images/project/st1.jpg" alt="">
+                    </div>
+                    <div id="figma1">
+                        <img class="modal__work-photo" src="/images/project/st2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
 
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Стоматология</h3>
+                    <div class="modal__work-info">
+                        Дизайн <span class="modal__work-info-divider">|</span> 2023
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Поток</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Учебная работа, концепт и редизайн сайта стоматологии.</p>
+                    <p>Дизайн выполнен в едином стиле, прозрачный фон стоматологичского кабинета с применением сине-голубых оттенков.</p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_4">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="urr">
+                        <img class="modal__work-photo" src="/images/project/urr1.jpg" alt="">
+                    </div>
+                    <div id="urr1">
+                        <img class="modal__work-photo" src="/images/project/urr2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Южно-региональный регистратор</h3>
+                    <div class="modal__work-info">
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2016
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Южно-региональный регистратор</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Fullstack. Проект выполнен с применением HTML,CSS, JQuery. Позже добавлен backend PHP, MySQL</p>
+                    <p>Сайт создан для компании являющейся реестродержателем акционерных обществ.</p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_5">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="tren">
+                        <img class="modal__work-photo" src="/images/project/tr1.jpg" alt="">
+                    </div>
+                    <div id="tren">
+                        <img class="modal__work-photo" src="/images/project/tr2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Игра: "Тренировка памяти"</h3>
+                    <div class="modal__work-info">
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Игра на запоминание картинок в определнный интервал времени.</p>
+                    <p>Игра создана на js, css, html</p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_6">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="multiconverter">
+                        <img class="modal__work-photo" src="/images/project/m1.jpg" alt="">
+                    </div>
+                    <div id="multiconverter1">
+                        <img class="modal__work-photo" src="/images/project/m2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Мультиконвертер</h3>
+                    <div class="modal__work-info">
+                        Приложение <span class="modal__work-info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Мультиконвертер изображений.</p>
+                    <p>Создан на python, html, css и Flask для размещения в сети интернет в качестве сайта. </p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_7">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="paseka">
+                        <img class="modal__work-photo" src="/images/project/p1.jpg" alt="">
+                    </div>
+                    <div id="paseka1">
+                        <img class="modal__work-photo" src="/images/project/p2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Интернет-магазин по продаже мёда.</h3>
+                    <div class="modal__work-info">
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Игра на запоминание картинок в определнный интервал времени.</p>
+                    <p>Игра создана на js, css, html</p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_8">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="clock1">
+                        <img class="modal__work-photo" src="/images/project/cl1.jpg" alt="">
+                    </div>
+                    <div id="clock2">
+                        <img class="modal__work-photo" src="/images/project/cl2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Аналоговые часы</h3>
+                    <div class="modal__work-info">
+                        Приложение <span class="modal__work-info-divider">|</span> 2021
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Online Analog Clock.</p>
+                    <p>Создан на js, html, css размещен в сети интернет в качестве сайта. </p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_9">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="nauka">
+                        <img class="modal__work-photo" src="/images/project/n1.jpg" alt="">
+                    </div>
+                    <div id="nauka1">
+                        <img class="modal__work-photo" src="/images/project/n2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Наука сна</h3>
+                    <div class="modal__work-info">
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2022
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Поток</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Учебный проект по дизайну и сборке сайтов "Наука сна"</p>
+                    <p>Создан на конструкторе Tilda. </p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_10">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="figma2">
+                        <img class="modal__work-photo" src="/images/project/d1.jpg" alt="">
+                    </div>
+                    <div id="figma3">
+                        <img class="modal__work-photo" src="/images/project/d2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Интернет-магазин по продаже бытовой техники</h3>
+                    <div class="modal__work-info">
+                        Дизайн <span class="modal__work-info-divider">|</span> 2023
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Дизайн сайта по продаже техники.</p>
+                    <p>Создан на Figma. </p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_11">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="school1">
+                        <img class="modal__work-photo" src="/images/project/e1.jpg" alt="">
+                    </div>
+                    <div id="school2">
+                        <img class="modal__work-photo" src="/images/project/e2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Школа Англиийского языка</h3>
+                    <div class="modal__work-info">
+                        Вебсайт <span class="modal__work-info-divider">|</span> 2023
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Поток</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Сайт и редизайн школы английского языка</p>
+                    <p>Создан на конструкторе Tilda. </p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
+
+<div class="modal" id="modal_project_12">
+    <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+            <img src="/images/modal/close.svg" width="34" height="39" alt="Close">
+        </button>
+        <div class="modal__work">
+            <div class="modal__work-preview">
+                <div data-slider="slick">
+                    <div id="guess1">
+                        <img class="modal__work-photo" src="/images/project/g1.jpg" alt="">
+                    </div>
+                    <div id="guess1">
+                        <img class="modal__work-photo" src="/images/project/g2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="modal__work-content">
+
+
+                <div class="modal__work-header">
+                    <h3 class="modal__work-title">Guess Number Game</h3>
+                    <div class="modal__work-info">
+                        Приложение <span class="modal__work-info-divider">|</span> 2023
+                    </div>
+                </div>
+
+                <div class="modal__work-client">
+                    <div class="modal__work-client-title">Клиент:</div>
+                    <div class="modal__work-client-company">Частное лицо</div>
+                </div>
+
+                <div class="modal__work-text">
+                    <p>Игра "Угадай потерянное число"</p>
+                    <p>Создан на js, html, css размещен в сети интернет в качестве сайта. </p>
+                </div>
+
+                <div class="modal__work-footer">
+                    <button class="modal__work-btn slickPrev" type="button">
+                        
+                        <img class="modal__work-btn-arrowleft" src="/images/modal/arrow-left.svg" height="20" alt="">
+                        Предыдущий
+                    </button>
+                    <button class="modal__work-btn slickNext" type="button">
+                        Следующий
+                        <img class="modal__work-btn-arrowright" src="/images/modal/arrow-right.svg" height="20" alt="">
+                    </button>
+                </div>
+            </div> <!--/.modal__work-content-->
+        </div> <!--/.modal__work-->
+    </div> <!--/.modal__dialog-->
+</div> <!--/.modal-->
 
 <div class="modal" id="modal_resume">
     <div class="modal__dialog">
@@ -826,15 +1353,22 @@
                             webmaster@mukonin.ru
                         </li>
                     </ul>
-
+                    
                     <form class="form" action="/" method="POST">
+                     <input type="hidden" name="project_name" value="Portfolio">
+		            <input type="hidden" name="admin_email" value="scipiont@gmail.com">
+		            <input type="hidden" name="form_subject" value="Заявка">
                         <div class="form__group">
-                            <label for="input-email" class="label">Адрес e-mail</label>
-                            <input class="input" name="input-email" type="text" id="input-email" placeholder="Адрес e-mail">
+                            <!-- <label for="input-email" class="label">Адрес e-mail</label> -->
+                            <label for="email" class="label">Адрес e-mail</label>
+                            <!-- <input class="input" name="input-email" type="text" id="input-email" placeholder="Адрес e-mail"> -->
+                            <input class="input" name="email" type="text" id="email" placeholder="Адрес e-mail">
                         </div>
                         <div class="form__group">
-                            <label for="input-email" class="label">Сообщение</label>
-                            <textarea class="textarea" name="input-text" id="input-text" placeholder="Ваше сообщение..."></textarea>
+                            <!-- <label for="input-email" class="label">Сообщение</label> -->
+                            <label for="message" class="label">Сообщение</label>
+                            <!-- <textarea class="textarea" name="input-text" id="input-text" placeholder="Ваше сообщение..."></textarea> -->
+                            <textarea class="textarea" name="message" id="formMessage" placeholder="Ваше сообщение..."></textarea>
                         </div>
                         <div class="text-right">
                             <button class="btn" type="submit">Отправить</button>
@@ -853,5 +1387,6 @@
 <!--JS-->
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

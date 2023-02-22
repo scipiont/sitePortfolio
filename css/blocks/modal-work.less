@@ -1,11 +1,26 @@
 // main: ../style.less
 .modal__work {
     display: flex;
+    @media @tablet {
+        
+        position: relative;
+   
+       
+    }
 }
 .modal__work-preview {
     width: 65%;
     position: relative;
     overflow: hidden;
+    // cursor: pointer;
+    @media @tablet {
+        width: 100%;
+        // top: 110%;
+        // order: 2;
+        position: relative;
+        // height: 50%;
+       
+    }
 }
 .modal__work-photo {
     position: absolute;
@@ -13,11 +28,28 @@
     left: 50%;
     z-index: 1;
     transform: translate3d(-50%, -50%, 0);
+     @media @tablet {
+         top: 100%;
+        position: relative;
+         z-index: 1;
+     }
 }
 .modal__work-content {
     width: 35%;
     padding: 3.4rem 6.6rem 1rem 1.73rem;
     position: relative;
+    @media @tablet {
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        order: 1;
+       margin-bottom: 2rem;
+       padding-left: 0;
+       text-align: center;
+    //    max-width: 600px;
+       margin-left: auto;
+       margin-right: auto;
+    }
 }
 .modal__work-header {
     margin-bottom: 2.2rem;
@@ -105,3 +137,6 @@
   }
 
   
+// #go_to_mnogomeda {
+//     cursor: pointer;
+// }
