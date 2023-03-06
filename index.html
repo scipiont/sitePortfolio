@@ -12,6 +12,12 @@
     <title>Портфолио</title>
 </head>
 <body>
+    
+    <script src="three.r134.min.js"></script>
+    <!-- <script src="vanta.rings.min.js"></script> -->
+     <script src="vanta.globe.min.js"></script>
+  
+   
     <!-- <body class="no-scroll"> -->
     <!-- Header -->
     <header class="header">
@@ -31,7 +37,8 @@
                     <a class = "nav__link" href="#" data-scroll="#works">Работа</a>
                     <a class = "nav__link" href="#" data-scroll="#about">Обо мне</a>
                     <a class = "nav__link" href="#" data-scroll="#blog">Блог</a>
-                    <a class = "nav__link" href="#" data-modal="#modal_hire_me">Контакты</a>
+                    <!-- <a class = "nav__link" href="#" data-modal="#modal_hire_me">Контакты</a> -->
+                    <a class = "nav__link" href="https://blog.mukonin.ru/" target="_blank">Контакты</a>
                     <!-- <a class = "nav__link nav-nav__link_border" href="#">Найми меня</a> -->
                     <a class = "nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
                 </nav> 
@@ -43,7 +50,7 @@
     </header>
     <!-- Для каждой секции должен быть заголовок h1,h2 и т.д. -->
     <!-- Intro -->
-    <section class="intro">  
+    <section class="intro" id="intro">  
         <div class="container">
             <div class="intro__inner">
                 <div class="intro__content">
@@ -60,7 +67,7 @@
                         <a class = "social__link" href="https://www.linkedin.com/in/nikolay-mukonin-09a3a613b/" target="_blank">
                             <img src="/images/social/3.png" alt="">
                         </a>
-                        <a class = "social__link" href="#" target="_blank">
+                        <a class = "social__link" href="https://www.facebook.com/profile.php?id=100090270173723" target="_blank">
                             <img src="/images/social/4.png" alt="">
                         </a>
                         <a class = "social__link" href="#" target="_blank">
@@ -273,8 +280,8 @@
                     <h3 class="about__title">Обо мне</h3>
                     <h2 class="about__bigtitle">Кто я</h2>
                     <div class="about__text">
-                       <p> Здравствуйте, меня зовут Николай и я профессиональный UI/UX веб-дизайнер. Я предлагаю услуги по разработке и дизайну веб-сайтов, а также по разработке интерфейсов и интерактивных приложений. Я использую различные инструменты, такие как Photoshop, Figma, Sketch и InVision, чтобы создавать эффективные и привлекательные дизайны.  </p>
-                       <p>Я постоянно стремлюсь к улучшению и использую последние достижения и технологии для того, чтобы создавать интерфейсы, которые пользователи могут легко использовать и понимать. Я активно работаю с клиентами, чтобы понять их потребности и помочь им достичь их целей. </p>
+                       <p> Здравствуйте, меня зовут Николай и я профессиональный UI/UX веб-дизайнер. Предлагаю услуги по разработке и дизайну веб-сайтов, а также по разработке интерфейсов и интерактивных приложений. Использую различные инструменты, такие как Photoshop, Figma, Sketch и InVision, чтобы создавать эффективные и привлекательные дизайны.  </p>
+                       <p>Я постоянно стремлюсь к улучшению и использую последние достижения и технологии для того, чтобы создавать интерфейсы, которые пользователи могут легко использовать и понимать. Активно работаю с клиентами, чтобы понять их потребности и помочь им достичь их целей. </p>
                        <!-- <p>На этом сайте вы можете просмотреть мое портфолио и посмотреть мои последние работы. Я уверен, что мои услуги помогут вам развить ваш бизнес и достичь успеха. Если у вас есть какие-либо вопросы, пожалуйста, не стесняйтесь обращаться ко мне. И буду рад помочь вам!</p> -->
                     </div>
                     <a class = "btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
@@ -288,7 +295,7 @@
         <div class="container">
             <div class="reviews__item">
                 <div class="reviews__text">
-                    <p>Я работал с Николаем Мукониным над созданием сайта для моей компании "ЮРР". Он был очень профессионален и выполнил все, что было необходимо. Он помог мне понять все процессы дизайна и программирования. </p>
+                    <p>Мы работали с Николаем Мукониным над созданием сайта для компании "ЮРР". Он был очень профессионален и выполнил все, что было необходимо. Он помог мне понять все процессы дизайна и программирования. </p>
                     <p>Николай очень профессиональный специалист и предоставил нам прекрасный результат его работы. Я бы очень рекомендовал его услуги другим компаниям. Он действительно понимает веб-дизайн и знает как создать профессиональный сайт. Спасибо Николай!</p>
                 </div>
                 <div class="reviews__author">
@@ -412,7 +419,7 @@
                     <a href="https://www.linkedin.com/in/nikolay-mukonin-09a3a613b/" target="_blank">
                         <img src="/images/social/linkedin.svg" height="20" alt="">
                     </a>
-                    <a href="#" target="_blank">
+                    <a href="https://www.facebook.com/profile.php?id=100090270173723" target="_blank">
                         <img src="/images/social/facebook.svg" width="20" alt="">
                     </a>
                     <a href="#" target="_blank">
@@ -430,7 +437,8 @@
                 <a class="footer__nav-link" href="#" data-scroll="#works">Работа</a>
                 <a class="footer__nav-link" href="#" data-scroll="#about">Обо мне</a>
                 <a class="footer__nav-link" href="#" data-scroll="#blog">Блог</a>
-                <a class="footer__nav-link" href="#" data-modal="#modal_hire_me">Контакты</a>
+                <!-- <a class="footer__nav-link" href="#" data-modal="#modal_hire_me">Контакты</a> -->
+                <a class="footer__nav-link" href="https://blog.mukonin.ru/" target="_blank">Контакты</a>
                 <a class="footer__nav-link footer__nav-link--btn" href="#" data-modal="#modal_hire_me">Найми меня</a>
             </div>
         </div> <!--footer__inner-->
@@ -1382,8 +1390,38 @@
         
     </div> <!--/.modal__dialog-->
 </div> <!--/.modal-->
-
-
+<!-- <script>
+    VANTA.RINGS({
+      el: "#works",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      backgroundColor: 0xffffff,
+      color: 0x87de20
+    })
+    </script> -->
+<script>
+VANTA.GLOBE({
+  el: "#intro",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+//   color: 0xff4300,
+//   color2: 0xff0000,
+  color: 0x0,
+  color2: 0x0,
+  size: 0.70,
+  backgroundColor: 0xffffff
+})
+</script>
 <!--JS-->
 <script src="js/slick.min.js"></script>
 <script src="js/app.js"></script>
